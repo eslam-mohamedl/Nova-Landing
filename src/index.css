@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body{
+    font-family: sans-serif;
+    background-color:#1c2230;
+    height: 5000px;
+}
