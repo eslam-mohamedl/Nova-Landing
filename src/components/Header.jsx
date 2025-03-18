@@ -22,7 +22,7 @@ function Header() {
     >
         <div className="container pr-[100px] pl-[100px] mx-auto  flex justify-between items-center gap-[30px] sm:gap-0  flex-col  sm:flex-row">
       <a href="/"> 
-      <img src="/src/assets/logo.svg" alt="logo-img" />
+      <img src="/public/assets/images/logo.svg" alt="logo-img" />
       </a>
       <ul className='flex items-center gap-[50px]'>
        {links.map((link)=>(
