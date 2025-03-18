@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-
+import logo from "../assets/images/logo.svg";
 function Header() {
     const headerRef = useRef();
     useEffect(()=>{
@@ -14,7 +14,7 @@ function Header() {
             }
         })
     });
-    const [links, setLinks] = useState(["Features", "Team", "Signin"]);
+    const [links] = useState(["Features", "Team", "Signin"]);
   return (
     <header 
     ref={headerRef}
@@ -22,7 +22,8 @@ function Header() {
     >
         <div className="container pr-[100px] pl-[100px] mx-auto  flex justify-between items-center gap-[30px] sm:gap-0  flex-col  sm:flex-row">
       <a href="/"> 
-      <img src="../../public/assets/images/logo.svg" alt="logo-img" />
+      <img src={logo} alt="logo-img" />
+
       </a>
       <ul className='flex items-center gap-[50px]'>
        {links.map((link)=>(
